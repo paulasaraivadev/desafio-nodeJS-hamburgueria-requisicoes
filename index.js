@@ -65,7 +65,7 @@ app.put('/order/:id', checkOrderId, allMethodAndURL, (request, response) => {
     return response.status(202).json(updatedOrder)
 })
 
-/* ROTA DELITE => Deletar a informação */
+/* ROTA DELETE => Deletar a informação */
 app.delete('/order/:id', checkOrderId, allMethodAndURL, (request, response) => {
     const index = request.orderIndex
     const id = request.orderId
